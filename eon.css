@@ -7,7 +7,7 @@
   font-family: Arial;
 }
 body{
-  background-color: #494949;
+  background-color: #4e4c4c;
 }
 
 img{
@@ -30,22 +30,6 @@ header{
 }
 nav .logo{
   display: none;
-}
-
-nav button {
-  border: none;
-  outline: none;
-  margin: 0 2px;
-  padding: 10px;
-  border-radius: 10px;
-  color: #fff;
-  font-size: 16px;
-  transform: .3s ease;
-  background-color: #31aff7;
-}
-
-nav button:hover {
-  background-color: #00bfff96;
 }
 nav ul{
   display: flex;
@@ -128,7 +112,7 @@ nav ul li a.active{
 .container{
   background-color: #a4a4a4;
   border-radius: 5px;
-  margin: 50px;
+  margin: 100px 50px;
   justify-content: center;
 }
 
@@ -137,10 +121,15 @@ nav ul li a.active{
   margin-bottom: 20px;
 }
 
+p{
+  font-size: 20px;
+}
+
 h1{
   color: #010101;
   text-align: center;
 }
+
 
 .form {
   display: flex;
@@ -282,19 +271,26 @@ h1{
   }
 }
 
-.parent-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+section-container{
+  background-color: #4e4c4c;
+  border: 2px;
+  margin: 100px 50px;
+  padding: 20px;
+  font-family: Arial;
+  text-align: center;
   justify-content: center;
-  align-items: center;
-  margin: 50px;
 }
 
-.child-container{
-  width: 100%;
-  max-width: 350px;
-  min-height: 100px;
+section-container ul{
+  display: block;
+  justify-content: center;
+}
+
+section li{
+  list-style-type: disc;
+  list-style-position: inside;
+  text-align: left;
+  justify-content: center;
 }
 
 .container-fluid{
@@ -304,6 +300,6 @@ h1{
   justify-content: center;
 }
 
-p{
+.container-fluid p{
   font-size: 20px;
 }
