@@ -7,6 +7,10 @@
   font-family: Arial;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   background: #9deef5;
   background: -webkit-linear-gradient(202deg, #9deef5 0%, #ffffff 100%);
@@ -92,18 +96,18 @@ nav ul li a.active{
 }
 
 .content .content8x h1 {
+  justify-content: center;
   font-size: 5em;
   color: #000;
   line-height: 1em;
   margin: 10px;
-  margin-left: 90px;
 }
 
 .content .content8x p {
+  justify-content: center;
   font-size: 1em;
   color: #000;
-  margin: 30px 10px;
-  margin-left: 90px;
+  margin: 30px 10px;;
 }
 
 .content .content8x .btn {
@@ -124,11 +128,10 @@ nav ul li a.active{
   box-shadow: 0 50x 10px rgba(0,0,0,0.1);
 }
 
-.img1x img {
+.img1 img {
   background-attachment: fixed;
   margin-top: 20px;
   width: 70%;
-  margin-right: 90px;
   border-radius: 5px;
 }
 
@@ -358,23 +361,6 @@ nav ul li a.active{
   background: #2c3e50;
 }
 
-@media (max-width: 768px) {
-  .content {
-      margin-left: 20px;
-  }
-
-  .content .content8x h1 {
-      font-size: 4em;
-      margin-left: 50px;
-      margin-top: 50px;
-  }
-
-  .img1x img {
-      width: 69%;
-      margin-left: 80px;
-  }
-}
-
 @keyframes pulse {
   from {
     transform: scale(0.9);
@@ -387,10 +373,10 @@ nav ul li a.active{
   }
 }
 
-@media only screen and (max-width: 1100px) {
+@media screen and (max-width: 992px) {
   header{
     width: 90%;
-    padding: 0 20px;
+    padding: 15px;
   }
   nav{
     position: absolute;
@@ -422,9 +408,81 @@ nav ul li a.active{
     display: block;
     padding: 0 20px;
     margin-top: 30px;
-
   }
   .hamburger{
     display: block;
+  }
+  .hamburger:hover{
+    background: #f6f4ff
+  }
+  
+  .hamburger div{
+    width: 30px;
+    height: 2px;
+    margin: 6px 0;
+    background: #212526;
+  }
+}
+
+@media (max-width: 768px){
+  header{
+    width: 120%;
+    padding: 10px;
+  }
+  .content{
+    margin-left: 20px
+  }
+  .content .content8x h1 {
+    font-size: 4em;
+    margin-left: 10px;
+    margin-top: 50px;
+  }
+
+  .img1 img {
+    width: 70%;
+  }
+
+  .box1 {
+    margin-left:200px;
+  }
+
+  .center {
+    top: 45%;
+  }
+  nav ul li a:hover{
+    background: #f6f4ff;
+  }
+  nav ul li a.active{
+    background: #7b7a7a;
+    color: #fff;
+  }
+}
+
+@media (max-width: 600px) {
+  header{
+    width: 100%;
+    padding: 10px;
+  }
+  .content {
+      margin-left: 10px;
+  }
+
+  .img1 img {
+      width: 80%;
+  }
+
+  .box1 {
+      margin-left: 120px;
+  }
+
+  ul {
+      width: 10%;
+  }
+  nav ul li a:hover{
+    background: #f6f4ff;
+  }
+  nav ul li a.active{
+    background: #7b7a7a;
+    color: #fff;
   }
 }
